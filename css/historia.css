@@ -1,0 +1,200 @@
+:root{ 
+    --blanco:#ffffff;
+    --negro: #000000;
+    --primario: #12db0b;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --naranja: #ffdac1;
+    --verdito: #c4c39c;
+    --naranjito: #ffda9e;
+    --lila: #c8c4ef;
+    
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; 
+    background-image: url(../images/movii.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ 
+body{
+    font-size: 16px; 
+  
+       
+}
+
+header{
+    padding: 3rem 2rem;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+header h1{
+   
+    color: rgba(0,0,0);
+    font-size: 4rem; 
+    text-align: center;
+  
+}
+
+
+.container{
+
+    width: 500px; 
+    margin: 0 auto; /*centra todo*/
+    
+}
+
+section article{
+         
+    background-color: rgb(224, 165, 98);
+    margin: 1rem 0; 
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+     
+}
+.sombraCaja{
+    
+        position: relative;
+      
+}
+
+.nav-background{
+    background-color: var(--naranjito);
+}
+.navPrincipal{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #c8c4ef;
+}
+@media (min-width: 768px) {
+    .navPrincipal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navPrincipal a{
+    color: var(--blanco);/*Para obtener una descripción general del uso del color en HTML*/
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+}
+
+.post{
+    text-align: center;
+}
+/*footer*/
+
+.footer{
+    text-align: center;
+   
+    margin-top: 5rem;
+    
+}
+.footer a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/** Footer **/
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+ 
+    background-position: center;
+    background-size: cover;
+}
+
+.footer .footer-content .footer-title h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.footer .footer-content .footer-title hr{
+    background: #fff;
+    height: 2px;
+    width: 80%;
+    margin:auto;
+}
+.footer .formulario-content{
+    width: 30%;
+    margin: 50px auto;
+    background: rgb(243, 176, 176);
+    padding:30px;
+    border-radius: 30px;
+    border: 1.5px solid var(--red);
+}
+.footer .formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .formulario-content #formulario label{
+    font-size: 20px;
+    text-align: center;
+    color: var(--black);
+    margin: 30px 0px 10px 0px;
+}
+.footer .formulario-content #formulario input{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid var(--red);
+    text-align: center;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.footer .formulario-content #formulario .send{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer .formulario-content #formulario button{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: var(--red);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: rgb(52, 12, 233);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer .footer-text{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background:rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #fff;
+}
+.footer .footer-text p{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
